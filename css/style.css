@@ -66,6 +66,22 @@
   border-radius: 50%;
 }
 
+.profile-container .profile-grid, .profile-container .profile-about, .profile-container .profile-exp, .profile-container .profile-edu {
+  border: 1px solid #006977;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.table th,
+.table td {
+  padding: 1rem;
+  text-align: left;
+}
+
+.table th {
+  background-color: #DCDCDC;
+}
+
 .form-container {
   margin-left: 10%;
   width: 80vw;
@@ -147,22 +163,41 @@ header .nav-container {
   align-items: center;
 }
 
-header ul {
-  width: 250px;
+header .nav-container ul {
+  width: 100%;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
-header h1 {
+header .nav-container ul li {
+  margin-left: 1.2rem;
+}
+
+header .nav-container .logo {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: .8rem;
+}
+
+header .nav-container .logo a {
   font-size: 1.5rem;
+  font-weight: 700;
+  transition: all .5s ease-in-out;
 }
 
-header a {
+header .nav-container .logo a:hover {
+  opacity: .8;
+}
+
+header .nav-container a {
+  font-size: 1rem;
   font-weight: 500;
   transition: all .5s ease-in-out;
 }
 
-header a:hover {
+header .nav-container a:hover {
   opacity: .8;
 }
 
@@ -280,7 +315,7 @@ header a:hover {
   padding-top: 7rem;
 }
 
-.section a {
+.section .back-link {
   position: absolute;
   top: 5rem;
   left: 1rem;
@@ -289,22 +324,103 @@ header a:hover {
   justify-content: flex-start;
 }
 
-.section a i {
+.section .back-link .bx-arrow-back {
   transition: all .5s ease-in-out;
   margin-right: 3px;
 }
 
-.section a:hover i {
+.section .back-link:hover .bx-arrow-back {
   transform: translate(-5px);
 }
 
-.single-profile-container {
+.profile-container {
+  display: grid;
+  grid-template-areas: "top top" "about about" "exp edu";
+  gap: 1rem;
   padding: 2rem;
   width: 80%;
   max-width: 1100px;
 }
 
-.single-profile-container img {
+.profile-container .profile-grid {
+  grid-area: top;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+
+.profile-container .profile-grid .icons {
+  width: 200px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.profile-container .profile-grid .home-social-link {
+  color: #006977;
+  font-size: 2rem;
+  transition: all .5s ease-in-out;
+}
+
+.profile-container .profile-grid .home-social-link:hover {
+  color: #343a40;
+}
+
+.profile-container .profile-grid img {
   width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+.profile-container .profile-about {
+  grid-area: about;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-container .profile-about p {
+  width: 70%;
+  padding: 1rem;
+}
+
+.profile-container .profile-about .skills {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+}
+
+.profile-container .profile-exp {
+  grid-area: exp;
+}
+
+.profile-container .profile-edu {
+  grid-area: edu;
+}
+
+.profile-container .profile-exp > div,
+.profile-container .profile-edu > div {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px dotted #006977;
+}
+
+.profile-container .profile-exp > div:last-child,
+.profile-container .profile-edu > div:last-child {
+  border: none;
+}
+
+.profile-container p {
+  margin: .5rem 0;
+}
+
+h1 {
+  margin-top: 1rem;
+}
+
+h2 {
+  margin: 1rem 0;
 }
 /*# sourceMappingURL=style.css.map */

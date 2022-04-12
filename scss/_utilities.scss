@@ -41,6 +41,7 @@
         background-color: transparent;
         color: $primary-color;
     }
+
 }
 
 .btn-light {
@@ -63,6 +64,23 @@
     border-radius: 50%;
 }
 
+%profile-section {
+    border: 1px solid $primary-color;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.table {
+    th,
+    td {
+        padding: 1rem;
+        text-align: left;
+    }
+
+    th {
+        background-color: $background-color;
+    }
+}
 
 
 

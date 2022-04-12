@@ -19,31 +19,39 @@
   <body>
     <header class="header">
       <div class="container nav-container">
-        <h1>
-          <a href="dashboard.html">
-            <i class="bx bx-code-alt"></i> Dev-Network
-          </a>
-        </h1>
+        <div class="logo">
+          <h1>
+            <a href="dashboard.html">
+              <i class="bx bx-code-alt"></i> Dev-Network
+            </a>
+          </h1>
+        </div>
         <nav class="navbar bg-dark">
           <ul>
             <li><a href="profiles.html">Developers</a></li>
             <li><a href="register.html">Register</a></li>
-            <li><a href="login.html" class="login-icon">Login <i class='bx bx-log-in-circle' ></i></a></li>
+            <li>
+              <a href="login.html" class="login-icon"
+                >Login <i class="bx bx-log-in-circle"></i
+              ></a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
-      <section class="section">
-        <a href="./profiles.html" class="text-primary"><i class='bx bx-arrow-back'></i> Back to profiles</a>
-        <div class="single-profile-container">
-          <!-- --- top profile ---  -->
-          <div class="profile-grid my-1">
-            <img class="round-img" src="./img/p1.jpg" alt="Asad Doost">
-            <h1 class="larg">Asad Doost</h1>
-            <p class="medium">Front-end Developer</p>
-            <p>Amsterdam, Netherlands</p>
-            <div class="icons my-1">
-              <a
+    <section class="section">
+      <a href="./profiles.html" class="text-primary back-link"
+        ><i class="bx bx-arrow-back"></i> Back to profiles</a
+      >
+      <div class="profile-container">
+        <!-- --- top profile ---  -->
+        <div class="profile-grid">
+          <img class="round-img" src="./img/p1.jpg" alt="Asad Doost" />
+          <h1 class="larg text-primary">Asad Doost</h1>
+          <p class="medium">Front-end Developer</p>
+          <p>Amsterdam, Netherlands</p>
+          <div class="icons my-1">
+            <a
               href="https://www.linkedin.com/in/asaddoost/"
               class="home-social-link"
               target="_blank"
@@ -61,50 +69,79 @@
               target="_blank"
               ><i class="bx bxl-stack-overflow"></i
             ></a>
-            </div>
-            <!-- --- about --- -->
-            <div class="profile-about bg-light p-2">
-              <h2 class="text-primary">Asad's Bio</h2>
-              <p>Hi! I'm Asad, a front-end developer with a background in sales and CRM.
-
-                I am passionate about learning new skills and technologies and creating functional projects that will solve people's problems.
-                
-                for me learning new things is the key to becoming a better version of myself and enriching life.</p>
-                <div class="line"></div>
-                <h2 class="text-primary">Skill Set</h2>
-                <div class="skills">
-                  <div class="p-1">
-                    <i class='bx bx-badge-check'></i> HTML
-                  </div>
-                  <div class="p-1">
-                    <i class='bx bx-badge-check'></i> CSS
-                  </div>
-                  <div class="p-1">
-                    <i class='bx bx-badge-check'></i> JavaScript
-                  </div>
-                  <div class="p-1">
-                    <i class='bx bx-badge-check'></i> React
-                  </div>
-                  <div class="p-1">
-                    <i class='bx bx-badge-check'></i> TypeScript
-                  </div>
-                </div>
-            </div>
-            <!-- ----- Experiences ---- -->
-            <div class="profile-exp bg-white p-2">
-              <h2 class="text-primary">Experiences</h2>
-              <div>
-                <h3>Freelancer</h3>
-                <p>oct 2020 - current</p>
-                <p>
-                  <strong>position: </strong>Front-end Developer
-                </p>
-              </div>
-            </div>
-
           </div>
-          
-        </div>    
-      </section>
+        </div>
+        <!-- --- about --- -->
+        <div class="profile-about bg-light p-2">
+          <h2 class="text-primary">Asad's Bio</h2>
+          <p>
+            Hi! I'm Asad, a front-end developer with a background in sales and
+            CRM. I am passionate about learning new skills and technologies and
+            creating functional projects that will solve people's problems. for
+            me learning new things is the key to becoming a better version of
+            myself and enriching life.
+          </p>
+          <div class="line"></div>
+          <h2 class="text-primary">Skill Set</h2>
+          <div class="skills">
+            <div class="p-1"><i class="bx bx-badge-check"></i> HTML</div>
+            <div class="p-1"><i class="bx bx-badge-check"></i> CSS</div>
+            <div class="p-1"><i class="bx bx-badge-check"></i> JavaScript</div>
+            <div class="p-1"><i class="bx bx-badge-check"></i> React</div>
+            <div class="p-1"><i class="bx bx-badge-check"></i> TypeScript</div>
+          </div>
+        </div>
+        <!-- ----- Experiences ---- -->
+        <div class="profile-exp bg-white p-2">
+          <h2 class="text-primary">Experiences</h2>
+          <div>
+            <h3>Booking</h3>
+            <p>Oct 2020 - current</p>
+            <p><strong>position: </strong>Front-end Developer</p>
+            <p>
+              <strong>Description: </strong> <br />
+              - Developing pixel perfect React (with Typescript) functional
+              components <br />
+              - Developing automated unittests with Jest.<br />
+              - Peer code reviews<br />
+              - Refactor code repo to maintain code quality <br />
+            </p>
+          </div>
+          <div>
+            <h3>Picnic</h3>
+            <p>Feb 2019 - Oct 2020</p>
+            <p><strong>position: </strong>Front-end Developer</p>
+            <p>
+              <strong>Description: </strong> <br />
+              - Lead refactoring tasks for consistent code and better
+              readability.<br />
+              - Optimizing code for performance.<br />
+              - Develop and implement Frontend Standards <br />
+              - Advocating clean code practices.<br />
+            </p>
+          </div>
+        </div>
+        <!-- ------ Education ---- -->
+        <div class="profile-edu bg-white p-2">
+          <h2 class="text-primary">Education</h2>
+          <div>
+            <h3>- Qazvin University of Medical Sciences</h3>
+            <p>Sep 2017 - Oct 2019</p>
+            <p>
+              <strong>position: </strong>Master's degree, Nutrition
+              Sciences
+            </p>
+          </div>
+          <div>
+            <h3>- University of Guilan</h3>
+            <p>Sep 2010 - Jun 2014</p>
+            <p>
+              <strong>position: </strong>Bachelor's degree, Animal Nutrition
+              Sciences
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
