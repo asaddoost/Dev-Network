@@ -522,4 +522,42 @@ h2 {
 .new-profile-container form .form-buttons a:hover i {
   transform: translate(-5px);
 }
+
+.posts-container {
+  width: 80%;
+  max-width: 1100px;
+  padding: 0 1rem 4rem;
+}
+
+.posts {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 80%;
+}
+
+.posts-item {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-column: 2rem;
+  align-items: center;
+  width: 100%;
+  margin: 1rem 0;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.posts img {
+  width: 100px;
+  object-fit: cover;
+}
+
+.discussion-post {
+  width: 80%;
+}
+
+.discussion-post img {
+  width: 100px;
+}
 /*# sourceMappingURL=style.css.map */
