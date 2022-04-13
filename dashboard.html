@@ -20,104 +20,109 @@
     <header class="header">
       <div class="container nav-container">
         <div class="logo">
-            <h1>
-              <a href="dashboard.html">
-                <i class="bx bx-code-alt"></i> Dev-Network
-              </a>
-            </h1>
-          </div>
+          <h1>
+            <a href="dashboard.html">
+              <i class="bx bx-code-alt"></i> Dev-Network
+            </a>
+          </h1>
+        </div>
         <nav class="navbar bg-dark">
           <ul>
             <li><a href="profiles.html">Developers</a></li>
             <li><a href="posts.html">Posts</a></li>
-            <li><a href="dashboard.html">
-                <i class='bx bxs-user' ></i>
-                <span class="hide-sm">Dashboard</span></a>
+            <li>
+              <a href="dashboard.html">
+                <i class="bx bxs-user"></i>
+                <span class="hide-sm">Dashboard</span></a
+              >
             </li>
-            <li><a href="login.html">
-                <i class='bx bx-log-out-circle' ></i>
-                <span class="hide-sm">Logout</span></a>
+            <li>
+              <a href="login.html">
+                <i class="bx bx-log-out-circle"></i>
+                <span class="hide-sm">Logout</span></a
+              >
             </li>
           </ul>
         </nav>
       </div>
     </header>
-      <section class="landing">
-          <div class="dashboard-container">
-            <h1 class="larg text-primary">Dashboard</h1>
-            <p class="medium"><i class='bx bxs-user'></i> Welcome Asad Doost</p>
-            <div class="dash-buttons">
-                <a href="create-profile.html" class="btn btn-light"><i class='bx bx-user-circle' ></i> Edit profile</a>
-                <a href="create-profile.html" class="btn btn-light"><i class='bx bx-briefcase' ></i> Add education</a>
-                <a href="create-profile.html" class="btn btn-light"><i class='bx bxs-user-detail'></i> Add Experience</a>
-            </div>
-            <h2>Experience credentials</h2>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>Company</th>
-                        <th class="hide-sm">Title</th>
-                        <th class="hide-sm">Years</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Booking</td>
-                        <td class="hide-sm">Front-end Developer</td>
-                        <td class="hide-sm">Oct 2020 - current</td>
-                        <td><button class="btn btn-danger">
-                            Delete
-                        </button></td>
-                    </tr>
-                    <tr>
-                        <td>Picnic</td>
-                        <td class="hide-sm">Front-end Developer</td>
-                        <td class="hide-sm">Feb 2019 - Oct 2020</td>
-                        <td><button class="btn btn-danger">
-                            Delete
-                        </button></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <h2>Education credentials</h2>
-            <table class="table">
-                <thead>
-                    <tr>
-                        <th>University</th>
-                        <th class="hide-sm">Degree</th>
-                        <th class="hide-sm">Years</th>
-                        <th></th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Qazvin University of Medical Sciences</td>
-                        <td class="hide-sm">Master</td>
-                        <td class="hide-sm">Sep 2017 - Oct 2019</td>
-                        <td><button class="btn btn-danger">
-                            Delete
-                        </button></td>
-                    </tr>
-                    <tr>
-                        <td>University of Guilan</td>
-                        <td class="hide-sm">Bachelor</td>
-                        <td class="hide-sm">Sep 2010 - Jun 2014</td>
-                        <td><button class="btn btn-danger">
-                            Delete
-                        </button></td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="my-2">
-                <button class="btn btn-danger">
-                    <i class='bx bxs-user-minus' ></i> Delete My Account
-                </button>
-            </div>
+    <section class="landing">
+      <div class="dashboard-container">
+        <div class="dashbord-title">
+          <h1 class="larg text-primary">Dashboard</h1>
+          <p class="medium"><i class="bx bxs-user"></i> Welcome Asad Doost</p>
+          <div class="dash-buttons">
+            <a href="create-profile.html" class="btn btn-light"
+              ><i class="bx bx-user-circle"></i> Edit Profile</a
+            >
+            <a href="education.html" class="btn btn-light"
+              ><i class="bx bx-briefcase"></i> Add Education</a
+            >
+            <a href="experience.html" class="btn btn-light"
+              ><i class="bx bxs-user-detail"></i> Add Experience</a
+            >
           </div>
+        </div>
+        <div class="main-table">
+          <h2>Experience credentials</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Company</th>
+                <th class="hide-sm">Title</th>
+                <th class="hide-sm">Years</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Booking</td>
+                <td class="hide-sm">Front-end Developer</td>
+                <td class="hide-sm">Oct 2020 - current</td>
+                <td><button class="btn btn-danger">Delete</button></td>
+              </tr>
+              <tr>
+                <td>Picnic</td>
+                <td class="hide-sm">Front-end Developer</td>
+                <td class="hide-sm">Feb 2019 - Oct 2020</td>
+                <td><button class="btn btn-danger">Delete</button></td>
+              </tr>
+            </tbody>
+          </table>
 
-      </section>
+          <h2>Education credentials</h2>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>University</th>
+                <th class="hide-sm">Degree</th>
+                <th class="hide-sm">Years</th>
+                <th></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Qazvin University of Medical Sciences</td>
+                <td class="hide-sm">Master</td>
+                <td class="hide-sm">Sep 2017 - Oct 2019</td>
+                <td><button class="btn btn-danger">Delete</button></td>
+              </tr>
+              <tr>
+                <td>University of Guilan</td>
+                <td class="hide-sm">Bachelor</td>
+                <td class="hide-sm">Sep 2010 - Jun 2014</td>
+                <td><button class="btn btn-danger">Delete</button></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="my-2">
+            <button class="btn btn-danger">
+              <i class="bx bxs-user-minus"></i> Delete My Account
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
   </body>
 </html>

@@ -423,4 +423,103 @@ h1 {
 h2 {
   margin: 1rem 0;
 }
+
+.dashboard-container {
+  width: 80%;
+  max-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.dashboard-container .dash-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding-top: 2rem;
+}
+
+.dashboard-container .dash-buttons .btn {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.dashboard-container .dash-buttons .btn i {
+  position: absolute;
+  left: 30px;
+  top: 10px;
+}
+
+.new-profile-container {
+  max-width: 1100px;
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  column-gap: 4rem;
+  padding-bottom: 5rem;
+}
+
+.new-profile-container .new-profile-title {
+  width: 30%;
+}
+
+.new-profile-container form {
+  width: 70%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 3rem;
+  flex-grow: 1rem;
+}
+
+.new-profile-container form small {
+  display: block;
+  opacity: .7;
+}
+
+.new-profile-container form option {
+  background-color: #006977;
+  color: #f4f4f4;
+}
+
+.new-profile-container form .social-input {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  border: 1px solid #006977;
+  width: 50%;
+  border-radius: 10px;
+}
+
+.new-profile-container form .social-input input {
+  border: none;
+}
+
+.new-profile-container form .social-input i {
+  margin-left: 1rem;
+  color: #006977;
+  font-size: 1.3rem;
+}
+
+.new-profile-container form input[type="submit"] {
+  width: 100px;
+}
+
+.new-profile-container form .form-buttons {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.new-profile-container form .form-buttons i {
+  transition: all .5s ease-in-out;
+}
+
+.new-profile-container form .form-buttons a:hover i {
+  transform: translate(-5px);
+}
 /*# sourceMappingURL=style.css.map */

@@ -351,3 +351,114 @@ header {
     h2 {
         margin: 1rem 0;
     }
+ 
+    // ---- dashboard ------
+
+    .dashboard-container {
+        width: 80%;
+        max-width: $max-width;
+        display: flex;
+        justify-content: space-between;
+        
+
+        .dash-buttons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            row-gap: 1rem;
+            padding-top: 2rem;
+
+            .btn {
+                position: relative;
+                width: 100%;
+                text-align: center;
+
+                i {
+                    position: absolute;
+                    left: 30px;
+                    top: 10px;
+                }
+            }
+            
+        }
+    }
+
+
+    // ----- create profile ----
+
+    .new-profile-container {
+        max-width: $max-width;
+        width: 80%;
+        display: flex;
+        justify-content:space-around;
+        column-gap: 4rem;
+        padding-bottom: 5rem;
+
+       .new-profile-title  {
+           width: 30%;
+       } 
+
+       form {
+        width: 70%;
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 3rem;
+        flex-grow: 1rem;
+
+        small {
+            display: block;
+            opacity: .7;
+        }
+
+        option {
+            background-color: $primary-color;
+            color: $light-color;
+           
+        }
+
+        .social-input {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            border: 1px solid $primary-color;
+            width: 50%;
+            border-radius: 10px;
+
+            input {
+                border: none;
+            }
+            i {
+                margin-left: 1rem;
+                color: $primary-color;
+                font-size: 1.3rem;
+            }
+        }
+
+        input[type="submit"] {
+            width: 100px;
+        }
+        
+        .form-buttons {
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+            i {
+                @include transition;
+            }
+
+            a {
+                &:hover i{
+                    transform: translate(-5px);
+                }
+            }
+        }
+
+       }
+
+       
+    }
