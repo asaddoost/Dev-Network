@@ -5,3 +5,5 @@
 - Compatible with all mobile devices and with a beautiful and pleasant user interface.
 
 [▶️ Launch Demo](https://asaddoost.github.io/Dev-Network/)
+
+![preview img](/preview.jpg)
